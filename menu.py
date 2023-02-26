@@ -67,7 +67,7 @@ def main_menu():
     while True:
         MENU_MOUSE_POS = pygame.mouse.get_pos()
 
-        SCREEN.fill("black")
+        SCREEN.fill("#601a35")
 
         MENU_TEXT = get_font(70).render("MAIN MENU", True, "White")
         MENU_RECT = MENU_TEXT.get_rect(center=(640, 100))

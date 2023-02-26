@@ -1,4 +1,15 @@
 WEEK 1
 
-- Created repository
-- Created closeable main menu
+- Create the repository on GitHub
+- Install all prerequierments (IDE, GitKraken, packages, plug-ins, etc.)
+- Try to create game in one file (failed)
+- Recovery the game folder (accidently deleted :D)
+- Resolve GitKraken problems (repository clone errors)
+
+WEEK 2
+
+- Clean the game folder
+- Create the game main menu
+- Add a new text font
+- Add buttons to main menu
+- Add some colors of background & text in main menu

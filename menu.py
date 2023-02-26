@@ -1,101 +1,107 @@
-import pygame, sys
+import pygame
+import sys
 from button import Button
 
 pygame.init()
 
-SCREEN = pygame.display.set_mode((1280, 720))
-pygame.display.set_caption("Menu")
+screen = pygame.display.set_mode((1280, 720))
+pygame.display.set_caption("Main menu")
 
-BG = pygame.image.load("src/background.png")
+bg = pygame.image.load("src/background.png")
 
 def get_font(size):
-    return pygame.font.Font("src/font.ttf", size)
-
-def play():
-    while True:
-        PLAY_MOUSE_POS = pygame.mouse.get_pos()
-
-        SCREEN.fill("black")
-
-        PLAY_TEXT = get_font(45).render("Working in progress", True, "White")
-        PLAY_RECT = PLAY_TEXT.get_rect(center=(640, 260))
-        SCREEN.blit(PLAY_TEXT, PLAY_RECT)
-
-        PLAY_BACK = Button(image=None, pos=(640, 460), 
-                            text_input="BACK", font=get_font(75), base_color="White", hovering_color="Green")
-
-        PLAY_BACK.changeColor(PLAY_MOUSE_POS)
-        PLAY_BACK.update(SCREEN)
-
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
-            if event.type == pygame.MOUSEBUTTONDOWN:
-                if PLAY_BACK.checkForInput(PLAY_MOUSE_POS):
-                    main_menu()
-
-        pygame.display.update()
+    return pygame.font.Font("src/font.ttf")
     
-def options():
+def singleplayer():
     while True:
-        OPTIONS_MOUSE_POS = pygame.mouse.get_pos()
-
-        SCREEN.fill("black")
-
-        OPTIONS_TEXT = get_font(45).render("Working in progress", True, "White")
-        OPTIONS_RECT = OPTIONS_TEXT.get_rect(center=(640, 260))
-        SCREEN.blit(OPTIONS_TEXT, OPTIONS_RECT)
-
-        OPTIONS_BACK = Button(image=None, pos=(640, 460), 
-                            text_input="BACK", font=get_font(75), base_color="White", hovering_color="Green")
-
-        OPTIONS_BACK.changeColor(OPTIONS_MOUSE_POS)
-        OPTIONS_BACK.update(SCREEN)
-
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
-            if event.type == pygame.MOUSEBUTTONDOWN:
-                if OPTIONS_BACK.checkForInput(OPTIONS_MOUSE_POS):
-                    main_menu()
-
-        pygame.display.update()
-
-def main_menu():
-    while True:
-        MENU_MOUSE_POS = pygame.mouse.get_pos()
-
-        SCREEN.fill("#601a35")
-
-        MENU_TEXT = get_font(70).render("MAIN MENU", True, "White")
-        MENU_RECT = MENU_TEXT.get_rect(center=(640, 100))
-        SCREEN.blit(MENU_TEXT, MENU_RECT)
-
-        PLAY_BUTTON = Button(image=None, pos=(640, 250), 
-                            text_input="Singleplayer", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
-        OPTIONS_BUTTON = Button(image=None, pos=(640, 400), 
-                            text_input="Multiplayer", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
-        QUIT_BUTTON = Button(image=None, pos=(640, 550), 
-                            text_input="Challange", font=get_font(75), base_color="#d7fcd4", hovering_color="White")
-
-        for button in [PLAY_BUTTON, OPTIONS_BUTTON, QUIT_BUTTON]:
-            button.changeColor(MENU_MOUSE_POS)
-            button.update(SCREEN)
+        singleplayer_mouse_pos = pygame.mouse.get_pos()
+        
+        screen.fill("cyan")
+        
+        
         
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
             if event.type == pygame.MOUSEBUTTONDOWN:
-                if PLAY_BUTTON.checkForInput(MENU_MOUSE_POS):
-                    play()
-                if OPTIONS_BUTTON.checkForInput(MENU_MOUSE_POS):
-                    options()
-                if QUIT_BUTTON.checkForInput(MENU_MOUSE_POS):
+                if singleplayer_back.checkForInput(singleplayer_mouse_pos):
                     main_menu()
+                    
+    pygame.display.update()
 
+def multiplayer():
+    while True:
+        multiplayer_mouse_pos = pygame.mouse.get_pos()
+        
+        screen.fill("cyan")
+        
+        
+        
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if multiplayer_back.checkForInput(multiplayer_mouse_pos):
+                    main.menu()
+ 
+     pygame.display.update()
+     
+def challange():
+    while True:
+        challange_mouse_pos = pygame.mouse.get_pos()
+        
+        screen.fill("cyan")
+        
+        
+        
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if challange_back.checkForInput(challange_mouse_pos):
+                    main_menu()
+                    
+    pygame.display.update()
+
+def main_menu():
+    pygame.display.set_caption("Main menu")
+    
+    while True:
+        screen.blit(bg, (0, 0))
+        
+        menu_mouse_pos = pygame.mouse.get_pos()
+        
+        menu_text = get_font(100).render("Main menu", True, "#b68f40")
+        menu_rect = menu_text.get_rect(center=(640, 100))
+        
+        singleplayer_button = Button(image=None, pos=(640, 250),
+                                     text_input="Singleplayer", font=get_font(75), base_color="#d7fcd4", hovering_color="white")
+        multiplayer_button = Button(image=None, pos=(640, 400),
+                                    text_input="Multiplayer", font=get_font(75), base_color="#d7fcd4", hovering_color="white")
+        challange_button = Button(image=None, pos=(640, 550),
+                                  text_input="Challange", font=get_font(75), base_color="#d7fcd4", hovering_color="white")
+        
+        screen.blit(menu_text, menu_rect)
+        
+        for Button in [singleplayer_button, multiplayer_button, challange_button]:
+            button.changeColor(menu_mouse_pos)
+            button.update(screen)
+            
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                if singleplayer_button.checkForInput(menu_mouse_pos):
+                    singleplayer()
+                if multiplayer_button.checkForInput(menu_mouse_pos):
+                    multiplayer()
+                if challange_button.checkForInput(menu_mouse_pos):
+                    challange()
+                    
         pygame.display.update()
-
+    
 main_menu()

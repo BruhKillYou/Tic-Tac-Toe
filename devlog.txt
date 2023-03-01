@@ -6,6 +6,12 @@ WEEK 1
 - Recovery the game folder (accidently deleted :D)
 - Resolve GitKraken problems (repository clone errors)
 
+- Planning to create the main menu
+
+- Some problems with GitKraken repository cloning (still unsolved)
+
+- Sometimes my roommate is noisy, but meanwhile it's ok
+
 WEEK 2
 
 - Clean the game folder
@@ -13,3 +19,9 @@ WEEK 2
 - Add a new text font
 - Add buttons to main menu
 - Add some colors of background & text in main menu
+
+- Plannig to create singleplayer with super advanced AI, but I'm too lazy
+
+- I still have problems with GitKraken (I hate GitKraken)
+
+- I am pissed off my roommates (I think I'm gonna kill them)

@@ -1,27 +1,32 @@
-WEEK 1
+PRVÍ TÝDEN
 
-- Create the repository on GitHub
-- Install all prerequierments (IDE, GitKraken, packages, plug-ins, etc.)
-- Try to create game in one file (failed)
-- Recovery the game folder (accidently deleted :D)
-- Resolve GitKraken problems (repository clone errors)
+1) Vytvoření a propojení repozitáře na GitHubu
+2) Instalace všech potřebných knihoven
+3) Neúspěšný pokus implementace celého kódu do jednoho souboru (smazáno)
+4) Založení nového .py souboru
+5) Vyřešení nějakých problémů GitKrakenu s kompatibilitou
+6) Naplánováno vytvoření hlavního menu, ze kterého se budou otevírat patřičné soubory
+7) Opět potíž s GitKrakenem (nelze klonovat soukromé repozitáře)
+8) Spolubydlící na internátě furt žvaní a ruší (mám chuť mu dát přes držku :D)
 
-- Planning to create the main menu
+DRUHÝ TÝDEN
 
-- Some problems with GitKraken repository cloning (still unsolved)
+1) Dělání pořádku ve složkách a souborech (jelikož mám na ntb spoutu programů a souborů, mám tu veliký bordel :D)
+2) Vytvoření hlavního menu, které je však zatím nefunkční
+3) Přidán nový font textu pro zajímavější vzhled
+4) Přidání zatím nefunkčních tlačítek, které budou později vyvolávat podprogramy s hrou
+5) Přidání barev a zkrášlení hlavního menu
+6) Příští týden se zaměřím na lehčí část hry - hra ve dvou na jednom počítači
+7) Stále nevyřešený problém s GitKrakenem (na Teamsech jsem již školní instalačku nenašel)
+8) Začínám být pěkně naštvaný na své bezohledné spolubydlící
 
-- Sometimes my roommate is noisy, but meanwhile it's ok
+TŘETÍ TÝDEN
 
-WEEK 2
-
-- Clean the game folder
-- Create the game main menu
-- Add a new text font
-- Add buttons to main menu
-- Add some colors of background & text in main menu
-
-- Plannig to create singleplayer with super advanced AI, but I'm too lazy
-
-- I still have problems with GitKraken (I hate GitKraken)
-
-- I am pissed off my roommates (I think I'm gonna kill them)
+1) Jelikož jsou prázdniny, tak mám spoustu času na to programovat - sebemotivování :D
+2) Úprava některých částí kódu hlavního menu (především oprava chyb ve zdrojovém kódu)
+3) Dokončení prací na hlavním menu hry - je již konečně funkční
+4) Začátek práce na lehčí části hry, čímž je hra pro dva hráče na jednom počítači
+5) Přeložení veškerých souborů do češtiny, jelikož mi ta angličtina začíná lézt na nervy :)
+6) Další týden bych chtěl dokončit režim pro dva hráče
+7) Do projektu byl zapojen ChatGPT, který používám jakožto učitele s jehož pomocí se člověk učí porozumět kódu a implementovat ho
+8) Jelikož mám prázdniny, mám klid posunout svůj projekt kupředu (káva, postel, teplo, písničky, sušenky,... Tak to mám rád :D)
